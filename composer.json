@@ -1,0 +1,32 @@
+{
+    "name": "carl/bouncetrap-client",
+    "description": "A client wrapper around the BounceTrap API",
+    "keywords": ["bounce", "trap", "bouncetrap", "API", "client", "php"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Carl Knowles",
+            "email": "carl@dysfunctio.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "^1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2",
+        "mockery/mockery": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Optimail\\BounceTrap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
