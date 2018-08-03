@@ -1,6 +1,6 @@
 # BounceTrap API Client
 
-A simple package to consume GraphQL APIs.
+A simple package to consume BounceTrap's API.
 
 -----------------------
 
@@ -25,9 +25,7 @@ new Client;
 
 ## Response class
 
-Pass in your query, optional variables and headers (eg bearer token), `$variables` and `$headers` are optional
-
-`$response = $client->response($query, $variables, $headers);`
+`$response = $client->response($email);`
 
 ### toArray()
 
@@ -52,8 +50,8 @@ Use `$response->hasErrors();` to check if the response contains any errors
 
 ### Raw guzzle response
 
-`$client->raw(..., $headers);`
+`$client->raw($email);`
 
 ### Json
 
-`$client->json(..., $headers);`
+`$client->json($email);`
